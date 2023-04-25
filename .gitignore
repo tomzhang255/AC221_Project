@@ -166,6 +166,7 @@ cython_debug/
 credentials/
 
 # large files
+res/
 data/
 trainingandtestdata/
 lda/
