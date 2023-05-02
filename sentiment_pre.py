@@ -21,7 +21,7 @@ if __name__ == '__main__':
     tokenizer = AutoTokenizer.from_pretrained("cardiffnlp/twitter-roberta-base-sentiment")
     model = AutoModelForSequenceClassification.from_pretrained("cardiffnlp/twitter-roberta-base-sentiment")
 
-    all_tweets_both = pd.read_csv('all_tweets_both.csv')
+    all_tweets_both = pd.read_csv('data/all_tweets_both.csv')
     all_tweets_both.dropna(subset=['text'], inplace=True)
 
     t1 = datetime.now()
@@ -34,4 +34,4 @@ if __name__ == '__main__':
     t2 = datetime.now()
     print(f'time elapsed: {t2 - t1}')
 
-    all_tweets_both.to_csv('all_tweets_sentiment.csv', index=False)
+    all_tweets_both.to_csv('data/all_tweets_sentiment.csv', index=False)

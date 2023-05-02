@@ -40,7 +40,7 @@ def embed_text(text, model):
 if __name__ == '__main__':
     tt0 = now()
 
-    data = pd.read_csv("all_tweets_sentiment.csv", nrows=300)
+    data = pd.read_csv("data/all_tweets_sentiment.csv", nrows=300)
 
     # apply preprocessing to the text column
     data["processed_text"] = data["text"].apply(preprocess_text)

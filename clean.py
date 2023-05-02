@@ -42,5 +42,5 @@ if __name__ == '__main__':
     print('all mutated')
 
     # save final
-    all_tweets.to_csv('all_tweets_both.csv', index=False)
-    all_geo.to_csv('all_geo_both.csv', index=False)
+    all_tweets.to_csv('data/all_tweets_both.csv', index=False)
+    all_geo.to_csv('data/all_geo_both.csv', index=False)

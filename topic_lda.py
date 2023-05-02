@@ -91,7 +91,7 @@ def assign_top_n_topics_to_documents_parallel(lda_model, corpus, top_n):
 if __name__ == '__main__':
     tt0 = now()
 
-    data = pd.read_csv("all_tweets_sentiment.csv")
+    data = pd.read_csv("data/all_tweets_sentiment.csv")
 
     # apply preprocessing to the text column in parallel
     num_partitions = 10
