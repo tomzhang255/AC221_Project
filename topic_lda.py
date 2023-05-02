@@ -103,7 +103,7 @@ if __name__ == '__main__':
     corpus = [dictionary.doc2bow(text) for text in data["processed_text"]]
 
     # train the LDA model (parallel)
-    num_topics = 50
+    num_topics = 15
     num_workers = cpu_count()
     t1 = now()
     log('training model...')
@@ -119,7 +119,7 @@ if __name__ == '__main__':
     loaded_lda_model = LdaModel.load("lda/lda_model.gensim")
 
     # get top n most probable topics to the documents (AKA tweets)
-    top_n = 5
+    top_n = 3
     top_n_topic_assignments = assign_top_n_topics_to_documents_parallel(lda_model, corpus, top_n)
 
     # save the topics back into the data frame
