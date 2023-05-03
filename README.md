@@ -29,3 +29,4 @@ See `ac221_project_proposal.pdf`
   - We use two sets of psychometric scale questionnaires:
     - Beck's Depression Inventory (BDI)
     - General Anxiety Disorder-7 (GAD-7)
+- `stat_analysis.ipynb`: Statistical analysis on all previous intermediate results

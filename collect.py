@@ -1,10 +1,10 @@
-# the goal of this script is to retrive all tweets within a specific time period;
+# the goal of this script is to retrieve all tweets within a specific time period;
 # using the academic research account yields a response of up to 500 tweets per request;
 # of course, the complete result set far exceeds 500 tweets;
-# twitter api allows us to retrive the complete result set with pagination;
+# twitter api allows us to retrieve the complete result set with pagination;
 # essentially, each response contains a 'next_token' field which points to
 # the next partition of the complete result set;
-# we will be able to retrive the complete result set by repeatedly sending
+# we will be able to retrieve the complete result set by repeatedly sending
 # api requests with an extra 'next_token' parameter;
 # stop when a response no longer has a 'next_token' field;
 
